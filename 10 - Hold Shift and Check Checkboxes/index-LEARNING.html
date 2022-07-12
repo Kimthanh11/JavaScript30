@@ -103,7 +103,6 @@
 
         const multiCheck = (el, e) => {
           if (lastSelected && e.shiftKey) {
-            //el.checked = lastSelected.checked;
             const [startIdx, endIdx] =
               el.id > lastSelected.id
                 ? [lastSelected.id, el.id]
@@ -112,7 +111,7 @@
               parseInt(startIdx) + 1,
               endIdx
             );
-            middleInputs.forEach((checkbox) => (checkbox.checked = el.checked));
+            middleInputs.forEach((checkbox) => (checkbox.checked = true));
           }
           lastSelected = el;
         };
