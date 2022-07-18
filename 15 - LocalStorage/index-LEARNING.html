@@ -67,8 +67,8 @@
         };
 
         items.push(items);
-        populateList(items, itemsList);
-        localStorage.setItem("items", JSON.stringify(items));
+        populateList(items, itemsList); //update in HTML
+        localStorage.setItem("items", JSON.stringify(items)); //update in local storage
         this.reset();
       }
 
